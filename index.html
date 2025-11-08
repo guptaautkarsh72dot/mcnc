@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Flask App (Frontend)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Full-Stack Flask Application</h1>
+            <p>Backend: Flask | Frontend: Browser</p>
+        </header>
+
+        <main>
+            <!-- Data Input Section -->
+            <section class="card">
+                <h2>Add Data</h2>
+                <form id="dataForm">
+                    <div class="form-group">
+                        <label for="message">Enter Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Type your message here..." required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Message</button>
+                </form>
+            </section>
+
+            <!-- Text Processing Section -->
+            <section class="card">
+                <h2>Process Text (Backend Logic)</h2>
+                <form id="processForm">
+                    <div class="form-group">
+                        <label for="textInput">Enter Text to Process:</label>
+                        <textarea id="textInput" name="text" rows="4" placeholder="Enter text to process on the backend..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Process on Backend</button>
+                </form>
+                <div id="processResult" class="result-box"></div>
+            </section>
+
+            <!-- Data Display Section -->
+            <section class="card">
+                <h2>Stored Data</h2>
+                <button id="refreshBtn" class="btn btn-outline">Refresh Data</button>
+                <div id="dataList" class="data-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
